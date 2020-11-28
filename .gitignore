@@ -190,3 +190,5 @@ Temporary Items
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 .vscode/settings.json
+examples/ir.jpg
+examples/ir.bmp
