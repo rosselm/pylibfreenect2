@@ -11,11 +11,11 @@ from pylibfreenect2 import FrameType, Registration, Frame
 try:
     from pylibfreenect2 import OpenGLPacketPipeline
     pipeline = OpenGLPacketPipeline()
-except:
+except:  # NOQA
     try:
         from pylibfreenect2 import OpenCLPacketPipeline
         pipeline = OpenCLPacketPipeline()
-    except:
+    except:  # NOQA
         from pylibfreenect2 import CpuPacketPipeline
         pipeline = CpuPacketPipeline()
 print("Packet pipeline:", type(pipeline).__name__)
