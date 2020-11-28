@@ -59,8 +59,8 @@ while True:
         break
     if key == ord('s'):
         output = (frame.asarray() / 65535. * 255).astype(np.uint8)  
-        cv2.imwrite("ir.bmp", output)
-        cv2.imwrite("ir.jpg", output)
+        cv2.imwrite("output.bmp", output)
+        cv2.imwrite("output.jpg", output)
     listener.release(frames)
     
 
